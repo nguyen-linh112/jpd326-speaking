@@ -105,6 +105,13 @@ const dialogues = [
       { word: '牛乳', reading: 'ぎゅうにゅう', meaning: 'sữa bò' },
       { word: '方法', reading: 'ほうほう', meaning: 'cách, phương pháp' },
       { word: '試す', reading: 'ためす', meaning: 'thử' },
+      { word: '体調を崩す', reading: 'たいちょうをくずす', meaning: 'bị mất sức khỏe, ốm' },
+      { word: '夏バテ', reading: 'なつバテ', meaning: 'kiệt sức vì nóng mùa hè' },
+      { word: '冷たい物', reading: 'つめたいもの', meaning: 'đồ lạnh' },
+      { word: '温かい物', reading: 'あたたかいもの', meaning: 'đồ ấm' },
+      { word: '〜のような', reading: '', meaning: 'như là, giống như (mẫu gốc: スープのような温かい物)' },
+      { word: '〜として', reading: '', meaning: 'với tư cách là, như là' },
+      { word: '〜に限る', reading: 'にかぎる', meaning: '… là nhất, chỉ có … là tốt' },
     ],
     versions: [
       { id: 'goc', label: 'Mẫu gốc', draft: false, note: '', lines: [] },
@@ -244,6 +251,13 @@ const dialogues = [
       { word: '無料', reading: 'むりょう', meaning: 'miễn phí' },
       { word: '都合', reading: 'つごう', meaning: 'lịch, hoàn cảnh thuận tiện' },
       { word: '教える', reading: 'おしえる', meaning: 'dạy' },
+      { word: '興味', reading: 'きょうみ', meaning: 'hứng thú, quan tâm' },
+      { word: '参加する', reading: 'さんかする', meaning: 'tham gia' },
+      { word: '寄付', reading: 'きふ', meaning: 'quyên góp' },
+      { word: '評判', reading: 'ひょうばん', meaning: 'danh tiếng, lời đồn tốt' },
+      { word: '延期', reading: 'えんき', meaning: 'hoãn lại' },
+      { word: '〜かなと思って', reading: 'かなとおもって', meaning: 'tôi nghĩ liệu có thể … không (cách mời nhẹ nhàng)' },
+      { word: '〜にしては', reading: '', meaning: 'so với (là …) thì … (khá tốt)' },
     ],
     versions: [
       { id: 'goc', label: 'Mẫu gốc', draft: false, note: '', lines: [] },
@@ -424,5 +438,24 @@ const dialogues = [
     ],
   },
 ];
+
+// ===== Mẫu gốc dùng chung theo bài =====
+// Tài liệu chỉ có 1 hội thoại mẫu cho mỗi bài (6, 7, 8, 10), dùng chung cho mọi 場面 của bài đó:
+//   - Bài 6: 場面1 và 場面2 dùng mẫu メアリー–山口
+//   - Bài 7: 場面3 và 場面4 dùng mẫu アンナ–鈴木
+// Muốn đổi mẫu, chỉ cần sửa `lines` ở 場面1 / 場面3 (場面2 / 場面4 sẽ lấy theo).
+const shareSample = (fromIdx, toIdx, note) => {
+  dialogues[toIdx].versions[0] = { ...dialogues[fromIdx].versions[0], note };
+};
+shareSample(
+  0,
+  1,
+  'Hội thoại mẫu của bài 6 trong tài liệu của giáo viên (山口 = vai A, メアリー = vai B). Mẫu này dùng chung cho 場面1 và 場面2: hãy học cách diễn đạt rồi áp dụng vào tình huống mất ngủ.',
+);
+shareSample(
+  2,
+  3,
+  'Hội thoại mẫu của bài 7 trong tài liệu của giáo viên (アンナ = vai A, 鈴木 = vai B). Mẫu này dùng chung cho 場面3 và 場面4: hãy học cách mời rồi áp dụng vào việc mời tham gia tình nguyện.',
+);
 
 export default dialogues;
