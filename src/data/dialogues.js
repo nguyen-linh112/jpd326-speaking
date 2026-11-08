@@ -5,6 +5,8 @@
 //   - "Bản luyện thêm": hội thoại do app soạn theo đúng bối cảnh đề, ngôn từ đơn giản (N5–N3).
 // Muốn thêm/sửa mẫu: sửa mảng `lines` của version tương ứng (xem README).
 
+import extras from './dialogueExtras.js';
+
 const l = (speaker, ja, vi) => ({ speaker, ja, vi });
 
 const dialogues = [
@@ -457,5 +459,22 @@ shareSample(
   3,
   'Hội thoại mẫu của bài 7 trong tài liệu của giáo viên (アンナ = vai A, 鈴木 = vai B). Mẫu này dùng chung cho 場面3 và 場面4: hãy học cách mời rồi áp dụng vào việc mời tham gia tình nguyện.',
 );
+
+// ===== Gắn phần bổ sung (ảnh đề, ảnh mẫu, bản sát gốc, câu hỏi thêm) – xem dialogueExtras.js =====
+// Thứ tự phiên bản: Mẫu gốc -> Bản sát gốc -> Bản luyện thêm
+dialogues.forEach((d) => {
+  const x = extras[d.id];
+  if (!x) return;
+  d.promptImages = x.promptImages;
+  if (x.originalImage) d.originalImage = x.originalImage;
+  d.followUps = x.followUps;
+  d.versions.splice(1, 0, {
+    id: 'sat',
+    label: 'Bản sát gốc',
+    draft: true,
+    note: x.sat.note,
+    lines: x.sat.lines,
+  });
+});
 
 export default dialogues;

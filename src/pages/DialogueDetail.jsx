@@ -5,7 +5,9 @@ import DialogueEditor from '../components/Editor/DialogueEditor.jsx';
 import EditToolbar, { DraftBadge } from '../components/EditToolbar.jsx';
 import FuriganaText from '../components/FuriganaText.jsx';
 import JaVi, { VocabList } from '../components/JaVi.jsx';
-import { findById, isPending, saveItem, useContent } from '../utils/contentStore.js';
+import FollowUps from '../components/FollowUps.jsx';
+import ZoomImage from '../components/ZoomImage.jsx';
+import { findById, getBaseItem, isPending, saveItem, useContent } from '../utils/contentStore.js';
 import { toggleDone, useProgress } from '../utils/progress.js';
 
 export default function DialogueDetail() {
@@ -46,6 +48,11 @@ export default function DialogueDetail() {
   const idx = Math.min(vIdx ?? firstReady, d.versions.length - 1);
   const version = d.versions[idx];
   const done = p.isDone('dialogues', d.id);
+  // Bản đã chỉnh sửa từ trước có thể chưa có ảnh/câu hỏi thêm -> lấy từ dữ liệu gốc
+  const base = getBaseItem('dialogues', d.id);
+  const originalImage = d.originalImage ?? base?.originalImage;
+  const promptImages = d.promptImages ?? base?.promptImages;
+  const followUps = d.followUps ?? base?.followUps;
 
   return (
     <div className="stack">
@@ -58,6 +65,14 @@ export default function DialogueDetail() {
         </div>
         <h1 className="ja-title"><FuriganaText text={d.title} /></h1>
         <div className="vi">{d.titleVi}</div>
+        {originalImage && (
+          <ZoomImage
+            src={originalImage}
+            alt={`Hội thoại mẫu gốc – ${d.title}`}
+            caption={`📄 Hội thoại mẫu gốc của bài ${d.lesson} (bấm vào ảnh để phóng to)`}
+            maxWidth={520}
+          />
+        )}
         <div className="btn-row between">
           <button type="button" className={`btn ${done ? 'ok' : ''}`} onClick={() => toggleDone('dialogues', d.id)}>
             {done ? '✓ Đã thuộc' : 'Đánh dấu đã thuộc'}
@@ -68,6 +83,13 @@ export default function DialogueDetail() {
 
       <section className="card">
         <h3 className="sec-title">📝 Đề bài</h3>
+        {promptImages && (
+          <div className="prompt-images">
+            <p className="muted small">Ảnh đề giống đề thi thật (bấm vào ảnh để phóng to). Bên dưới là phần chữ có furigana và nghĩa Việt.</p>
+            <ZoomImage src={promptImages.A} alt={`Đề bài vai A – ${d.title}`} caption="Vai A" maxWidth={780} />
+            <ZoomImage src={promptImages.B} alt={`Đề bài vai B – ${d.title}`} caption="Vai B" maxWidth={780} />
+          </div>
+        )}
         <div className="roles">
           <div className="role-box a">
             <b>Vai A</b>
@@ -112,6 +134,8 @@ export default function DialogueDetail() {
           <DialoguePlayer key={version.id} version={version} />
         )}
       </section>
+
+      <FollowUps items={followUps} idPrefix={`fu-${d.id}`} />
     </div>
   );
 }

@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState } from 'react';
 import DialoguePlayer from './DialoguePlayer.jsx';
 import JaVi from './JaVi.jsx';
+import ZoomImage from './ZoomImage.jsx';
 import { ExpressionsBlock, GuideBlock, QuestionHeader, SamplesBlock } from './QuestionCard.jsx';
 import { useRecorder } from '../hooks/useRecorder.js';
 import { isPending, useContent } from '../utils/contentStore.js';
@@ -175,6 +176,7 @@ export default function ExamMode() {
                 <span className="lesson">{d.lesson ? `第${d.lesson}課` : ''}</span>
                 <span className="role-pill big">Bạn đóng vai {role}</span>
               </div>
+              <ZoomImage src={d.promptImages?.[role]} alt={`Đề bài vai ${role}`} maxWidth={700} />
               <JaVi item={roleBox} id={`exam-role-${d.id}`} />
               {d.info?.length > 0 && (
                 <div className="info-box">
