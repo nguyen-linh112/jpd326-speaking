@@ -70,8 +70,19 @@ export default {
         t('{貴重|きちょう}な{体験|たいけん}ができて、よかったです。', 'Tôi có được một trải nghiệm quý giá, thật tốt.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Nhặt rác ở biển cùng bạn cùng trường',
+      lines: [
+        t('{私|わたし}は{同|おな}じ{学校|がっこう}の{友|とも}だちと、{海|うみ}のごみ{拾|ひろ}いに{参加|さんか}しました。', 'Tôi đã cùng các bạn cùng trường tham gia nhặt rác ở biển.'),
+        t('{思|おも}ったよりごみが{多|おお}くて、{驚|おどろ}きました。', 'Rác nhiều hơn tôi nghĩ nên tôi rất ngạc nhiên.'),
+        t('でも、みんなで{協力|きょうりょく}したので、{海|うみ}がきれいになって、とても{嬉|うれ}しかったです。', 'Nhưng vì mọi người cùng hợp sức nên biển trở nên sạch sẽ, tôi rất vui.'),
+        t('{友|とも}だちとお{互|たが}いをよく{知|し}ることができて、{充実|じゅうじつ}した{一日|いちにち}でした。', 'Tôi hiểu bạn bè hơn, đó là một ngày thật bổ ích.'),
+      ],
+    },
   ],
   vocab: [
+    { word: 'ごみ拾い', reading: 'ごみひろい', meaning: 'nhặt rác' },
+    { word: '協力する', reading: 'きょうりょくする', meaning: 'hợp tác, hợp sức' },
     { word: '出会う', reading: 'であう', meaning: 'gặp gỡ' },
     { word: '知り合う', reading: 'しりあう', meaning: 'quen biết' },
     { word: '緊張する', reading: 'きんちょうする', meaning: 'căng thẳng, hồi hộp' },

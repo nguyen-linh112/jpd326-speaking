@@ -93,8 +93,20 @@ export default {
         t('ただ、{大|おお}きい{失敗|しっぱい}のときは、{会|あ}って{謝|あやま}ります。', 'Tuy nhiên, khi mắc lỗi lớn thì tôi gặp để xin lỗi.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Hay nhắn tin vì khó mở lời khi gặp',
+      lines: [
+        t('{私|わたし}は、{直接|ちょくせつ}{会|あ}うより、メッセージで「ごめんなさい」と{言|い}うことが{多|おお}いです。', 'Tôi thường nói “xin lỗi” bằng tin nhắn hơn là gặp trực tiếp.'),
+        t('{会|あ}って{言|い}うときは、{緊張|きんちょう}して、なかなか{話|はな}し{始|はじ}められないからです。', 'Vì khi gặp trực tiếp, tôi căng thẳng và mãi không mở lời được.'),
+        t('メッセージなら、{考|かんが}えながら、{気持|きも}ちに{合|あ}う{言葉|ことば}を{選|えら}べます。', 'Nếu nhắn tin thì tôi có thể vừa suy nghĩ vừa chọn từ ngữ phù hợp với cảm xúc.'),
+        t('だから、{落|お}ち{着|つ}いて{謝|あやま}れるメッセージのほうが{好|す}きです。', 'Vì vậy tôi thích nhắn tin hơn, vì có thể bình tĩnh xin lỗi.'),
+      ],
+    },
   ],
   vocab: [
+    { word: '話し始める', reading: 'はなしはじめる', meaning: 'bắt đầu nói, mở lời' },
+    { word: '選ぶ', reading: 'えらぶ', meaning: 'chọn' },
+    { word: '落ち着く', reading: 'おちつく', meaning: 'bình tĩnh' },
     { word: '直接', reading: 'ちょくせつ', meaning: 'trực tiếp' },
     { word: '謝る', reading: 'あやまる', meaning: 'xin lỗi' },
     { word: '失敗', reading: 'しっぱい', meaning: 'thất bại, lỗi lầm' },

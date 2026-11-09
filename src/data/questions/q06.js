@@ -100,8 +100,20 @@ export default {
         t('{私|わたし}が{聞|き}き{上手|じょうず}だからだと{思|おも}います。', 'Tôi nghĩ vì tôi là người biết lắng nghe.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Bạn thân chia sẻ chuyện buồn',
+      lines: [
+        t('はい、{親|した}しい{友|とも}だちが、{悲|かな}しいことを{話|はな}してくれたことがあります。', 'Vâng, có lần một người bạn thân đã chia sẻ với tôi chuyện buồn.'),
+        t('{聞|き}いたとき、{驚|おどろ}きましたが、{私|わたし}を{信|しん}じてくれていると{実感|じっかん}して、{嬉|うれ}しかったです。', 'Khi nghe, tôi ngạc nhiên nhưng cảm nhận được mình đang được bạn tin tưởng nên tôi thấy vui.'),
+        t('だから、{私|わたし}も{自分|じぶん}の{悩|なや}みを{話|はな}しました。', 'Vì vậy tôi cũng chia sẻ lại nỗi phiền muộn của mình.'),
+        t('{話|はな}したおかげで、お{互|たが}いにもっと{仲|なか}よくなれました。', 'Nhờ đã nói chuyện, chúng tôi trở nên thân nhau hơn.'),
+      ],
+    },
   ],
   vocab: [
+    { word: '親しい', reading: 'したしい', meaning: 'thân thiết' },
+    { word: '仲がいい', reading: 'なかがいい', meaning: 'thân nhau, hòa thuận' },
+    { word: 'お互い', reading: 'おたがい', meaning: 'lẫn nhau' },
     { word: '悩み', reading: 'なやみ', meaning: 'nỗi phiền muộn' },
     { word: 'シェアする', reading: 'シェアする', meaning: 'chia sẻ' },
     { word: '頼る', reading: 'たよる', meaning: 'dựa vào, tin cậy' },

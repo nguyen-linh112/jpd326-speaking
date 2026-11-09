@@ -43,8 +43,20 @@ export default {
         t('{夜|よる}は、にぎやかなナイトマーケットを{歩|ある}くのも{楽|たの}しいです。', 'Buổi tối đi dạo ở chợ đêm náo nhiệt cũng rất vui.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – 1 ngày ở TP.HCM (buổi trưa và tối là phần mình bổ sung)',
+      lines: [
+        t('ホーチミンで1{日|にち}にできることを{紹介|しょうかい}します。', 'Tôi sẽ giới thiệu những việc có thể làm trong 1 ngày ở TP. Hồ Chí Minh.'),
+        t('{朝|あさ}は、おいしい{朝|あさ}ごはんを{食|た}べて、そのあと{海|うみ}が{見|み}えるカフェでコーヒーを{飲|の}みましょう。', 'Buổi sáng hãy ăn sáng ngon, sau đó uống cà phê ở quán nhìn ra biển.'),
+        t('{昼|ひる}は、ベンタイン{市場|いちば}でお{土産|みやげ}を{探|さが}したり、{有名|ゆうめい}な{料理|りょうり}を{食|た}べたりできます。', 'Buổi trưa có thể tìm quà lưu niệm ở chợ Bến Thành hoặc ăn các món nổi tiếng.'),
+        t('{夜|よる}は、ブイビエン{通|どお}りを{歩|ある}いて、にぎやかな{夜|よる}を{楽|たの}しんでください。', 'Buổi tối hãy đi dạo phố Bùi Viện và tận hưởng đêm náo nhiệt.'),
+      ],
+    },
   ],
   vocab: [
+    { word: 'お土産', reading: 'おみやげ', meaning: 'quà lưu niệm' },
+    { word: '市場', reading: 'いちば', meaning: 'chợ' },
+    { word: 'ベンタイン市場', reading: 'ベンタインいちば', meaning: 'chợ Bến Thành' },
     { word: '名所', reading: 'めいしょ', meaning: 'danh lam thắng cảnh' },
     { word: '景色', reading: 'けしき', meaning: 'phong cảnh' },
     { word: '風景', reading: 'ふうけい', meaning: 'phong cảnh, cảnh vật' },

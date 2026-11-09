@@ -194,6 +194,8 @@ code { background: var(--primary-soft); padding: 1px 6px; border-radius: 6px; fo
 /* ===== Câu hỏi cô hỏi thêm ===== */
 .followups { display: flex; flex-direction: column; gap: 12px; }
 .followup { border: 1px solid var(--border-soft); border-radius: var(--radius-sm); padding: 10px 14px; background: #fffafc; }
+.followup-ref { background: #fff3c9; border-radius: 10px; padding: 4px 10px; margin-bottom: 8px; font-size: 0.9rem; }
+.followup-ref .ref-ja { font-size: 1.05rem; line-height: 1.9; }
 .followup-q { display: flex; gap: 8px; align-items: flex-start; }
 .followup-q .javi { flex: 1; min-width: 0; }
 .q-badge { flex: none; margin-top: 6px; background: var(--primary); color: #fff; font-weight: 700; font-size: 0.78rem; padding: 2px 8px; border-radius: 8px; }

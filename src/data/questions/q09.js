@@ -72,8 +72,20 @@ export default {
         t('{日帰|ひがえ}りでも{楽|たの}しめるので、ぜひ{来|き}てください。', 'Dù đi về trong ngày cũng có thể vui chơi, nên hãy đến nhé.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Quê là Sài Gòn (TP.HCM)',
+      lines: [
+        t('{私|わたし}の{故郷|ふるさと}はホーチミン{市|し}です。ホーチミンといえば、ブイビエン{通|どお}りで{知|し}られています。', 'Quê tôi là TP. Hồ Chí Minh. Nhắc đến TP.HCM thì nổi tiếng với phố đi bộ Bùi Viện.'),
+        t('{夜|よる}も{遅|おそ}くまでにぎやかで、{世界|せかい}から{多|おお}くの{人|ひと}が{訪|おとず}れています。', 'Ban đêm cũng náo nhiệt đến khuya, và có nhiều người từ khắp thế giới đến thăm.'),
+        t('{車|くるま}で{行|い}ける{海|うみ}があるので、{一緒|いっしょ}に{海|うみ}で{泳|およ}ぐこともできます。', 'Vì có biển có thể đi bằng xe, nên cũng có thể cùng nhau tắm biển.'),
+        t('それから、おいしいベトナム{料理|りょうり}を{味|あじ}わってほしいです。ぜひ{来|き}てください。', 'Ngoài ra, tôi muốn bạn thưởng thức món ăn Việt Nam ngon. Hãy nhất định đến nhé.'),
+      ],
+    },
   ],
   vocab: [
+    { word: 'ブイビエン通り', reading: 'ブイビエンどおり', meaning: 'phố Bùi Viện' },
+    { word: '泳ぐ', reading: 'およぐ', meaning: 'bơi, tắm biển' },
+    { word: '訪れる', reading: 'おとずれる', meaning: 'đến thăm' },
     { word: '名所', reading: 'めいしょ', meaning: 'danh lam thắng cảnh' },
     { word: '景色', reading: 'けしき', meaning: 'phong cảnh' },
     { word: '風景', reading: 'ふうけい', meaning: 'phong cảnh, cảnh vật' },

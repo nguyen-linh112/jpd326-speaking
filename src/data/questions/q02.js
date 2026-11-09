@@ -79,8 +79,20 @@ export default {
         t('この{行事|ぎょうじ}は、{新|あたら}しい{年|とし}をお{祝|いわ}いするためのものです。', 'Sự kiện này là để chúc mừng năm mới.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Hội chợ ẩm thực ở Vũng Tàu',
+      lines: [
+        t('{私|わたし}の{町|まち}ブンタウで{行事|ぎょうじ}と{言|い}えば、フードフェスティバルが{有名|ゆうめい}です。', 'Nhắc đến sự kiện ở Vũng Tàu quê tôi thì lễ hội ẩm thực (food festival) nổi tiếng.'),
+        t('{毎年|まいとし}、お{正月|しょうがつ}などの{大|おお}きい{休|やす}みになると、{海|うみ}の{近|ちか}くで{行|おこな}われています。', 'Mỗi năm cứ đến những kỳ nghỉ lớn như Tết, lễ hội được tổ chức gần biển.'),
+        t('{海|うみ}の{幸|さち}を{使|つか}った{料理|りょうり}や、いろいろな{屋台|やたい}の{料理|りょうり}が{味|あじ}わえます。', 'Có thể thưởng thức các món làm từ hải sản và món ăn ở nhiều quầy hàng rong.'),
+        t('{旅行|りょこう}に{来|き}た{人|ひと}もたくさんいて、とてもにぎやかです。', 'Cũng có rất nhiều khách du lịch đến nên rất náo nhiệt.'),
+      ],
+    },
   ],
   vocab: [
+    { word: 'フードフェスティバル', reading: 'フードフェスティバル', meaning: 'lễ hội ẩm thực' },
+    { word: 'お正月', reading: 'おしょうがつ', meaning: 'Tết' },
+    { word: '海の幸', reading: 'うみのさち', meaning: 'hải sản' },
     { word: '行事', reading: 'ぎょうじ', meaning: 'sự kiện, lễ hội' },
     { word: '祭り', reading: 'まつり', meaning: 'lễ hội' },
     { word: '夏祭り', reading: 'なつまつり', meaning: 'lễ hội mùa hè' },

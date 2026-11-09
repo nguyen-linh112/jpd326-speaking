@@ -58,8 +58,21 @@ export default {
         t('{友|とも}だちが{入|はい}っていて、いい{話|はなし}をたくさん{聞|き}いたので、{入|はい}りました。', 'Vì bạn tôi đã vào và tôi nghe nhiều điều tốt nên tôi đã tham gia.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Câu lạc bộ anime (phỏng vấn không đậu)',
+      lines: [
+        t('{私|わたし}はアニメクラブに{入|はい}りたくて、{情報|じょうほう}を{調|しら}べました。', 'Tôi muốn vào câu lạc bộ anime nên đã tìm hiểu thông tin.'),
+        t('{大学|だいがく}のサイトで{活動|かつどう}の{内容|ないよう}がわかって、{先輩|せんぱい}の{感想|かんそう}も{聞|き}きました。', 'Tôi biết nội dung hoạt động qua trang web của trường, và cũng nghe cảm tưởng của anh chị khóa trên.'),
+        t('それから、{思|おも}い{切|き}って{面接|めんせつ}を{受|う}けましたが、{残念|ざんねん}ながら{入|はい}れませんでした。', 'Sau đó, tôi mạnh dạn thử phỏng vấn, nhưng tiếc là không vào được.'),
+        t('でも、いい{経験|けいけん}になったので、また{別|べつ}のクラブに{挑戦|ちょうせん}したいです。', 'Tuy vậy, đó là một trải nghiệm tốt nên tôi muốn thử sức với một câu lạc bộ khác.'),
+      ],
+    },
   ],
   vocab: [
+    { word: '面接', reading: 'めんせつ', meaning: 'phỏng vấn' },
+    { word: '挑戦する', reading: 'ちょうせんする', meaning: 'thử sức, thử thách' },
+    { word: '残念', reading: 'ざんねん', meaning: 'đáng tiếc' },
+    { word: '内容', reading: 'ないよう', meaning: 'nội dung' },
     { word: 'クラブ', reading: 'クラブ', meaning: 'câu lạc bộ' },
     { word: '情報', reading: 'じょうほう', meaning: 'thông tin' },
     { word: '調べる', reading: 'しらべる', meaning: 'tìm hiểu, tra cứu' },

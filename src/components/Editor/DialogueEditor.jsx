@@ -102,9 +102,10 @@ export default function DialogueEditor({ initial, onSave, onCancel }) {
           onChange={(v) => set({ followUps: v })}
           addLabel="＋ Thêm câu hỏi"
           itemLabel={(f, i) => `Câu hỏi ${i + 1}`}
-          newItem={() => ({ q: { ja: '', vi: '' }, a: { ja: '', vi: '' } })}
+          newItem={() => ({ ref: { ja: '', vi: '' }, q: { ja: '', vi: '' }, a: { ja: '', vi: '' } })}
           render={(f, up) => (
             <div>
+              <JaViEdit value={f.ref || { ja: '', vi: '' }} onChange={(x) => up({ ...f, ref: x })} jaLabel="Gắn với câu bạn nói trong hội thoại (JP)" />
               <JaViEdit value={f.q} onChange={(x) => up({ ...f, q: x })} jaLabel="Câu hỏi (JP)" />
               <JaViEdit value={f.a} onChange={(x) => up({ ...f, a: x })} jaLabel="Gợi ý trả lời (JP)" />
             </div>

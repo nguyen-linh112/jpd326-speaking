@@ -97,8 +97,18 @@ export default {
         t('{山|やま}は{少|すく}ないですが、{景色|けしき}がきれいです。', 'Tuy ít núi nhưng phong cảnh rất đẹp.'),
       ],
     },
+    {
+      title: 'Mẫu theo ý bạn – Vũng Tàu (ブンタウ)',
+      lines: [
+        t('{私|わたし}は{海|うみ}の{町|まち}、ブンタウに{住|す}んでいます。', 'Tôi sống ở Vũng Tàu, một thị trấn biển.'),
+        t('ホーチミン{市|し}から{車|くるま}で2{時間|じかん}ぐらいのところに{位置|いち}していて、{町|まち}の{東|ひがし}と{南|みなみ}は{海|うみ}に{面|めん}しています。', 'Nằm cách TP.HCM khoảng 2 tiếng đi xe, phía đông và phía nam thị trấn hướng ra biển.'),
+        t('{町|まち}には{小|ちい}さい{山|やま}が2つあって、{高|たか}いところから{海|うみ}が{見|み}えます。', 'Trong thành phố có hai ngọn núi nhỏ, từ trên cao có thể nhìn thấy biển.'),
+        t('{海|うみ}と{山|やま}があって、{自然|しぜん}に{恵|めぐ}まれた{町|まち}です。', 'Có cả biển và núi, là một thị trấn được thiên nhiên ưu đãi.'),
+      ],
+    },
   ],
   vocab: [
+    { word: 'ブンタウ', reading: 'ブンタウ', meaning: 'Vũng Tàu' },
     { word: '地形', reading: 'ちけい', meaning: 'địa hình' },
     { word: '面積', reading: 'めんせき', meaning: 'diện tích' },
     { word: '特徴', reading: 'とくちょう', meaning: 'đặc điểm' },
